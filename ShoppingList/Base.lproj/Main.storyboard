@@ -44,6 +44,9 @@
                                 <rect key="frame" x="249" y="617" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Reset All Values"/>
+                                <connections>
+                                    <action selector="Reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l6W-gm-YsT"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cg0-cQ-MYd">
                                 <rect key="frame" x="16" y="157" width="217" height="30"/>
@@ -202,7 +205,25 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="Num" destination="9hd-lp-qm2" id="erf-te-Tsh"/>
+                        <outletCollection property="TextFields" destination="JG7-QZ-lDs" collectionClass="NSMutableArray" id="SKS-JZ-4yY"/>
+                        <outletCollection property="TextFields" destination="9hd-lp-qm2" collectionClass="NSMutableArray" id="Lx7-U4-CkU"/>
+                        <outletCollection property="TextFields" destination="xB6-cj-CsK" collectionClass="NSMutableArray" id="Lr7-bd-jTa"/>
+                        <outletCollection property="TextFields" destination="Sxb-z0-mLJ" collectionClass="NSMutableArray" id="5AB-aL-O4s"/>
+                        <outletCollection property="TextFields" destination="twH-Nb-TMB" collectionClass="NSMutableArray" id="Qem-gF-j1h"/>
+                        <outletCollection property="TextFields" destination="pes-hH-Au7" collectionClass="NSMutableArray" id="zcB-ok-fZJ"/>
+                        <outletCollection property="TextFields" destination="JG7-QZ-lDs" collectionClass="NSMutableArray" id="sKK-cG-m3p"/>
+                        <outletCollection property="TextFields" destination="oRw-Om-4KR" collectionClass="NSMutableArray" id="U0v-e1-GWL"/>
+                        <outletCollection property="TextFields" destination="69Y-sp-X49" collectionClass="NSMutableArray" id="u9m-Sj-6Nd"/>
+                        <outletCollection property="TextFields" destination="02Z-f1-ePz" collectionClass="NSMutableArray" id="xXw-Vb-dLW"/>
+                        <outletCollection property="TextFields" destination="Cg0-cQ-MYd" collectionClass="NSMutableArray" id="5yQ-FU-F4x"/>
+                        <outletCollection property="TextFields" destination="ean-rI-Mq9" collectionClass="NSMutableArray" id="Bjd-ly-pdZ"/>
+                        <outletCollection property="TextFields" destination="m9V-pH-Amp" collectionClass="NSMutableArray" id="yzk-qn-1lT"/>
+                        <outletCollection property="TextFields" destination="khU-w9-PdY" collectionClass="NSMutableArray" id="cxm-Tx-6LY"/>
+                        <outletCollection property="TextFields" destination="8aG-bs-n3u" collectionClass="NSMutableArray" id="KLa-IX-woX"/>
+                        <outletCollection property="TextFields" destination="U9m-MW-jg5" collectionClass="NSMutableArray" id="SUU-9n-jEK"/>
+                        <outletCollection property="TextFields" destination="swa-su-c40" collectionClass="NSMutableArray" id="Kvi-Dz-rBI"/>
+                        <outletCollection property="TextFields" destination="soe-6n-y9r" collectionClass="NSMutableArray" id="8NL-kD-xRi"/>
+                        <outletCollection property="TextFields" destination="6Mu-cY-Efb" collectionClass="NSMutableArray" id="Dcy-L7-rw4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
