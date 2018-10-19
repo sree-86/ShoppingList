@@ -23,22 +23,24 @@ class ViewController: UIViewController{
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
-      
     }
     
+    @IBAction func color1(_ sender: UIBarButtonItem) {
+        UIView.animate(withDuration: 1, animations: {
+            self.view.backgroundColor = UIColor.green }, completion: nil)
+    }
     
-  
+    @IBAction func gray(_ sender: UIBarButtonItem) {
+        UIView.animate(withDuration: 1, animations: {
+            self.view.backgroundColor = UIColor.gray}, completion: nil)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
    
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true;
-    }
     
 }
 
